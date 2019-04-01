@@ -1,0 +1,14 @@
+description 'enjoy-diving-mq module project'
+
+jar {
+    baseName = 'enjoy-diving-mq'
+    version = '0.0.1-SNAPSHOT'
+}
+
+dependencies {
+	compile project(':enjoy-diving-common')
+	
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-activemq', version: "${springBootVersion}"
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-amqp', version: "${springBootVersion}"
+	compile group: 'org.springframework.boot', name: 'spring-boot-devtools', version: "${springBootVersion}"
+}
