@@ -1,56 +1,82 @@
 package kr.co.pjm.diving.mq;
 
-import javax.jms.ConnectionFactory;
+import java.nio.charset.Charset;
 
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.jms.DefaultJmsListenerContainerFactoryConfigurer;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.context.embedded.Compression;
+import org.springframework.boot.context.embedded.ConfigurableEmbeddedServletContainer;
+import org.springframework.boot.context.embedded.EmbeddedServletContainerCustomizer;
+import org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory;
+import org.springframework.boot.web.servlet.FilterRegistrationBean;
+import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
-import org.springframework.jms.annotation.EnableJms;
-import org.springframework.jms.config.DefaultJmsListenerContainerFactory;
-import org.springframework.jms.config.JmsListenerContainerFactory;
+import org.springframework.http.converter.HttpMessageConverter;
+import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.jms.core.JmsTemplate;
-import org.springframework.jms.support.converter.MappingJackson2MessageConverter;
-import org.springframework.jms.support.converter.MessageConverter;
-import org.springframework.jms.support.converter.MessageType;
+import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.web.filter.CharacterEncodingFilter;
 
-import kr.co.pjm.diving.mq.active.Email;
+import kr.co.pjm.diving.mq.model.Email;
 
-@SpringBootApplication
-@EnableJms
-public class Application {
+@SpringBootApplication(scanBasePackages = {"kr.co.pjm.diving.mq"})
+@EnableScheduling
+public class Application extends SpringBootServletInitializer implements CommandLineRunner {
 
   public static void main(String[] args) {
-    //SpringApplication.run(Application.class, args);
+    SpringApplication.run(Application.class, args);
     
-    // Launch the application
+    /*// Launch the application
     ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);
 
     JmsTemplate jmsTemplate = context.getBean(JmsTemplate.class);
 
     // Send a message with a POJO - the template reuse the message converter
     System.out.println("Sending an email message.");
-    jmsTemplate.convertAndSend("mailbox", new Email("info@example.com", "Hello"));
+    jmsTemplate.convertAndSend("mailbox", new Email("info@example.com", "Hello"));*/
+  }
+
+  @Override
+  protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+    builder.sources(Application.class);
+    return builder;
   }
 
   @Bean
-  public JmsListenerContainerFactory<?> myFactory(ConnectionFactory connectionFactory,
-      DefaultJmsListenerContainerFactoryConfigurer configurer) {
-    DefaultJmsListenerContainerFactory factory = new DefaultJmsListenerContainerFactory();
-    // This provides all boot's default to this factory, including the message
-    // converter
-    configurer.configure(factory, connectionFactory);
-    // You could still override some of Boot's default if necessary.
-    return factory;
+  public EmbeddedServletContainerCustomizer containerCustomizer() throws Exception {
+    return (ConfigurableEmbeddedServletContainer container) -> {
+      if (container instanceof TomcatEmbeddedServletContainerFactory) {
+        Compression compression = new Compression();
+        compression.setEnabled(true);
+        compression.setMinResponseSize(2048);
+        container.setCompression(compression);
+      }
+    };
   }
 
-  @Bean // Serialize message content to json using TextMessage
-  public MessageConverter jacksonJmsMessageConverter() {
-    MappingJackson2MessageConverter converter = new MappingJackson2MessageConverter();
-    converter.setTargetType(MessageType.TEXT);
-    converter.setTypeIdPropertyName("_type");
-    return converter;
+  @Bean
+  public HttpMessageConverter<String> responseBodyConverter() {
+    return new StringHttpMessageConverter(Charset.forName("UTF-8"));
+  }
+
+  @Bean
+  public FilterRegistrationBean filterRegistrationBean() {
+    FilterRegistrationBean registrationBean = new FilterRegistrationBean();
+    CharacterEncodingFilter characterEncodingFilter = new CharacterEncodingFilter();
+    characterEncodingFilter.setForceEncoding(true);
+    characterEncodingFilter.setEncoding("UTF-8");
+
+    registrationBean.setFilter(characterEncodingFilter);
+
+    return registrationBean;
+  }
+
+  @Override
+  public void run(String... args) throws Exception {
+    // CommandLineRunner
   }
 
 }

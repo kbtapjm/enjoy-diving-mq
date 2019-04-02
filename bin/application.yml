@@ -16,11 +16,14 @@ spring:
   http:
     encoding:
       charset: UTF-8
-  batch:    job:      enabled: false
+  rabbitmq:
+    host: localhost
+    username: diver
+    password: 1234
+    port: 5672
 security:
   basic:
     enabled: false
-
 
 ---
 # local
