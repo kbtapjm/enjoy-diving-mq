@@ -1,0 +1,455 @@
+2019-04-01 13:48:25.095  INFO 16308 --- [restartedMain] kr.co.pjm.diving.mq.Application          : Starting Application on SKCC16D00593 with PID 16308 (C:\cloud\git\enjoy-diving\enjoy-diving-mq\bin started by Administrator in C:\cloud\git\enjoy-diving\enjoy-diving-mq)
+2019-04-01 13:48:25.096 DEBUG 16308 --- [restartedMain] kr.co.pjm.diving.mq.Application          : Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2019-04-01 13:48:25.096  INFO 16308 --- [restartedMain] kr.co.pjm.diving.mq.Application          : The following profiles are active: dev
+2019-04-01 13:48:25.131  INFO 16308 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@11364360: startup date [Mon Apr 01 13:48:25 KST 2019]; root of context hierarchy
+2019-04-01 13:48:25.286 DEBUG 16308 --- [background-preinit] org.jboss.logging                        : Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2019-04-01 13:48:26.153  INFO 16308 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-04-01 13:48:26.188  INFO 16308 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-04-01 13:48:26.486  INFO 16308 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-01 13:48:26.600  INFO 16308 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$8e2e6afb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-01 13:48:26.677  INFO 16308 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c7c2accd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-01 13:48:26.997  INFO 16308 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8083 (http)
+2019-04-01 13:48:27.007  INFO 16308 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2019-04-01 13:48:27.009  INFO 16308 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-04-01 13:48:27.120  INFO 16308 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-01 13:48:27.120  INFO 16308 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1989 ms
+2019-04-01 13:48:27.323  INFO 16308 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-01 13:48:27.324  INFO 16308 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-01 13:48:27.324  INFO 16308 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-04-01 13:48:27.324  INFO 16308 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-01 13:48:27.326  INFO 16308 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-04-01 13:48:27.326  INFO 16308 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-04-01 13:48:27.327  INFO 16308 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'webServlet' to [/h2-console/*]
+2019-04-01 13:48:27.657  INFO 16308 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-04-01 13:48:27.667  INFO 16308 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-01 13:48:27.728  INFO 16308 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-04-01 13:48:27.730  INFO 16308 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-04-01 13:48:27.731  INFO 16308 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-04-01 13:48:27.772  INFO 16308 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-04-01 13:48:27.865  INFO 16308 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-04-01 13:48:27.954  INFO 16308 --- [restartedMain] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2019-04-01 13:48:28.149  INFO 16308 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2019-04-01 13:48:28.151  INFO 16308 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2019-04-01 13:48:28.165  INFO 16308 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-04-01 13:48:28.492  INFO 16308 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@11364360: startup date [Mon Apr 01 13:48:25 KST 2019]; root of context hierarchy
+2019-04-01 13:48:28.561  INFO 16308 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-04-01 13:48:28.562  INFO 16308 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-04-01 13:48:28.596  INFO 16308 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-01 13:48:28.597  INFO 16308 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-01 13:48:28.639  INFO 16308 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-01 13:48:29.224  INFO 16308 --- [restartedMain] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: 90e18b85-04f1-4845-b6f0-63ea1e1820cb
+
+2019-04-01 13:48:29.265  INFO 16308 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+2019-04-01 13:48:29.329  INFO 16308 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.boot.autoconfigure.security.SpringBootWebSecurityConfiguration$ApplicationNoWebSecurityConfigurerAdapter$1@6029e1bf, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@61b3d4c8, org.springframework.security.web.context.SecurityContextPersistenceFilter@5102abba, org.springframework.security.web.header.HeaderWriterFilter@d6ca857, org.springframework.security.web.csrf.CsrfFilter@173db5d1, org.springframework.security.web.authentication.logout.LogoutFilter@796e07c8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1291c8e1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4f0efcbb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@686adf71, org.springframework.security.web.session.SessionManagementFilter@1288c724, org.springframework.security.web.access.ExceptionTranslationFilter@68ab4e8e]
+2019-04-01 13:48:29.587  INFO 16308 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-04-01 13:48:29.636  INFO 16308 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-04-01 13:48:29.643  INFO 16308 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2019-04-01 13:48:29.646  INFO 16308 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2019-04-01 13:48:29.664  INFO 16308 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2019-04-01 13:48:29.664  INFO 16308 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-04-01 13:48:29.712  INFO 16308 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8083 (http)
+2019-04-01 13:48:29.717  INFO 16308 --- [restartedMain] kr.co.pjm.diving.mq.Application          : Started Application in 4.992 seconds (JVM running for 5.784)
+2019-04-01 13:48:41.755  INFO 16308 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-04-01 13:48:41.756  INFO 16308 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@11364360: startup date [Mon Apr 01 13:48:25 KST 2019]; root of context hierarchy
+2019-04-01 13:48:41.757  INFO 16308 --- [RMI TCP Connection(2)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-04-01 13:48:41.758  INFO 16308 --- [RMI TCP Connection(2)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147482648
+2019-04-01 13:48:41.762  INFO 16308 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-04-01 13:48:41.762  INFO 16308 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-04-01 13:48:41.763  INFO 16308 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-04-01 13:48:41.763  INFO 16308 --- [RMI TCP Connection(2)-127.0.0.1] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2019-04-01 13:48:41.765  INFO 16308 --- [RMI TCP Connection(2)-127.0.0.1] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2019-04-01 14:10:21.475  INFO 13364 --- [restartedMain] kr.co.pjm.diving.mq.Application          : Starting Application on SKCC16D00593 with PID 13364 (C:\cloud\git\enjoy-diving\enjoy-diving-mq\bin started by Administrator in C:\cloud\git\enjoy-diving\enjoy-diving-mq)
+2019-04-01 14:10:21.476 DEBUG 13364 --- [restartedMain] kr.co.pjm.diving.mq.Application          : Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2019-04-01 14:10:21.476  INFO 13364 --- [restartedMain] kr.co.pjm.diving.mq.Application          : The following profiles are active: dev
+2019-04-01 14:10:21.513  INFO 13364 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1a585683: startup date [Mon Apr 01 14:10:21 KST 2019]; root of context hierarchy
+2019-04-01 14:10:21.658 DEBUG 13364 --- [background-preinit] org.jboss.logging                        : Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2019-04-01 14:10:22.481  INFO 13364 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-04-01 14:10:22.517  INFO 13364 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-04-01 14:10:22.819  INFO 13364 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-01 14:10:22.955  INFO 13364 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$7d97416d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-01 14:10:23.014  INFO 13364 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b72b833f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-01 14:10:23.362  INFO 13364 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8083 (http)
+2019-04-01 14:10:23.372  INFO 13364 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2019-04-01 14:10:23.373  INFO 13364 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-04-01 14:10:23.484  INFO 13364 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-01 14:10:23.484  INFO 13364 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1971 ms
+2019-04-01 14:10:23.683  INFO 13364 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-01 14:10:23.684  INFO 13364 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-01 14:10:23.685  INFO 13364 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-04-01 14:10:23.685  INFO 13364 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-01 14:10:23.686  INFO 13364 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-04-01 14:10:23.687  INFO 13364 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-04-01 14:10:23.688  INFO 13364 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'webServlet' to [/h2-console/*]
+2019-04-01 14:10:24.017  INFO 13364 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-04-01 14:10:24.027  INFO 13364 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-01 14:10:24.091  INFO 13364 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-04-01 14:10:24.093  INFO 13364 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-04-01 14:10:24.093  INFO 13364 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-04-01 14:10:24.134  INFO 13364 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-04-01 14:10:24.230  INFO 13364 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-04-01 14:10:24.302  INFO 13364 --- [restartedMain] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2019-04-01 14:10:24.500  INFO 13364 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2019-04-01 14:10:24.502  INFO 13364 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2019-04-01 14:10:24.519  INFO 13364 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-04-01 14:10:24.921  INFO 13364 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1a585683: startup date [Mon Apr 01 14:10:21 KST 2019]; root of context hierarchy
+2019-04-01 14:10:24.989  INFO 13364 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-04-01 14:10:24.990  INFO 13364 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-04-01 14:10:25.021  INFO 13364 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-01 14:10:25.021  INFO 13364 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-01 14:10:25.064  INFO 13364 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-01 14:10:25.634  INFO 13364 --- [restartedMain] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: fbd556b7-83ab-4fd1-9a86-bdc302e89e56
+
+2019-04-01 14:10:25.670  INFO 13364 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+2019-04-01 14:10:25.725  INFO 13364 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.boot.autoconfigure.security.SpringBootWebSecurityConfiguration$ApplicationNoWebSecurityConfigurerAdapter$1@40a092cf, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1b8f902b, org.springframework.security.web.context.SecurityContextPersistenceFilter@7a68712c, org.springframework.security.web.header.HeaderWriterFilter@139404a9, org.springframework.security.web.csrf.CsrfFilter@2f7e25eb, org.springframework.security.web.authentication.logout.LogoutFilter@4c6efe37, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7aea4ab9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3f2bb204, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@20ab5a2b, org.springframework.security.web.session.SessionManagementFilter@79d375ec, org.springframework.security.web.access.ExceptionTranslationFilter@7cca4e35]
+2019-04-01 14:10:25.905  INFO 13364 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-04-01 14:10:25.964  INFO 13364 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-04-01 14:10:25.972  INFO 13364 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2019-04-01 14:10:25.976  INFO 13364 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2019-04-01 14:10:25.992  INFO 13364 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2019-04-01 14:10:25.992  INFO 13364 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-04-01 14:10:26.040  INFO 13364 --- [restartedMain] o.apache.activemq.broker.BrokerService   : Using Persistence Adapter: MemoryPersistenceAdapter
+2019-04-01 14:10:26.059  INFO 13364 --- [JMX connector] o.a.a.broker.jmx.ManagementContext       : JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+2019-04-01 14:10:26.166  INFO 13364 --- [restartedMain] o.apache.activemq.broker.BrokerService   : Apache ActiveMQ 5.14.3 (localhost, ID:SKCC16D00593-52825-1554095426046-0:1) is starting
+2019-04-01 14:10:26.171  INFO 13364 --- [restartedMain] o.apache.activemq.broker.BrokerService   : Apache ActiveMQ 5.14.3 (localhost, ID:SKCC16D00593-52825-1554095426046-0:1) started
+2019-04-01 14:10:26.171  INFO 13364 --- [restartedMain] o.apache.activemq.broker.BrokerService   : For help or more information please see: http://activemq.apache.org
+2019-04-01 14:10:26.174  WARN 13364 --- [restartedMain] o.apache.activemq.broker.BrokerService   : Temporary Store limit is 51200 mb (current store usage is 0 mb). The data directory: C:\cloud\git\enjoy-diving\enjoy-diving-mq only has 34453 mb of usable space. - resetting to maximum available disk space: 34453 mb
+2019-04-01 14:10:26.200  INFO 13364 --- [restartedMain] o.a.activemq.broker.TransportConnector   : Connector vm://localhost started
+2019-04-01 14:10:26.279  INFO 13364 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8083 (http)
+2019-04-01 14:10:26.285  INFO 13364 --- [restartedMain] kr.co.pjm.diving.mq.Application          : Started Application in 5.199 seconds (JVM running for 5.983)
+2019-04-01 14:10:26.345  INFO 13364 --- [restartedMain] kr.co.pjm.diving.mq.Application          : Starting Application on SKCC16D00593 with PID 13364 (C:\cloud\git\enjoy-diving\enjoy-diving-mq\bin started by Administrator in C:\cloud\git\enjoy-diving\enjoy-diving-mq)
+2019-04-01 14:10:26.345 DEBUG 13364 --- [restartedMain] kr.co.pjm.diving.mq.Application          : Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2019-04-01 14:10:26.345  INFO 13364 --- [restartedMain] kr.co.pjm.diving.mq.Application          : The following profiles are active: dev
+2019-04-01 14:10:26.347  INFO 13364 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4913b5af: startup date [Mon Apr 01 14:10:26 KST 2019]; root of context hierarchy
+2019-04-01 14:10:26.964  INFO 13364 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-04-01 14:10:26.978  INFO 13364 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-04-01 14:10:27.034  INFO 13364 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-01 14:10:27.039  INFO 13364 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$7d97416d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-01 14:10:27.046  INFO 13364 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b72b833f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-01 14:10:27.202  INFO 13364 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8083 (http)
+2019-04-01 14:10:27.202  INFO 13364 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2019-04-01 14:10:27.203  INFO 13364 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-04-01 14:10:27.217  INFO 13364 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2019-04-01 14:10:27.217  INFO 13364 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 870 ms
+2019-04-01 14:10:27.272  INFO 13364 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-01 14:10:27.272  INFO 13364 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-01 14:10:27.272  INFO 13364 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-04-01 14:10:27.272  INFO 13364 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-01 14:10:27.273  INFO 13364 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-04-01 14:10:27.273  INFO 13364 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-04-01 14:10:27.274  INFO 13364 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'webServlet' to [/h2-console/*]
+2019-04-01 14:10:27.358  INFO 13364 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-04-01 14:10:27.358  INFO 13364 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-01 14:10:27.369  INFO 13364 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-04-01 14:10:27.372  INFO 13364 --- [restartedMain] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2019-04-01 14:10:27.375  INFO 13364 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2019-04-01 14:10:27.377  INFO 13364 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2019-04-01 14:10:27.377  WARN 13364 --- [restartedMain] o.h.j.i.EntityManagerFactoryRegistry     : HHH000436: Entity manager factory name (default) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2019-04-01 14:10:27.377  INFO 13364 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-04-01 14:10:27.475  INFO 13364 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4913b5af: startup date [Mon Apr 01 14:10:26 KST 2019]; root of context hierarchy
+2019-04-01 14:10:27.490  INFO 13364 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-04-01 14:10:27.490  INFO 13364 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-04-01 14:10:27.503  INFO 13364 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-01 14:10:27.503  INFO 13364 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-01 14:10:27.521  INFO 13364 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-01 14:10:27.543  WARN 13364 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springApplicationAdminRegistrar' defined in class path resource [org/springframework/boot/autoconfigure/admin/SpringApplicationAdminJmxAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Admin,name=SpringApplication
+2019-04-01 14:10:27.544  INFO 13364 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-04-01 14:10:27.544  INFO 13364 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-04-01 14:10:27.544  INFO 13364 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2019-04-01 14:10:27.545  INFO 13364 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2019-04-01 14:10:27.547  INFO 13364 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service Tomcat
+2019-04-01 14:10:27.558  INFO 13364 --- [restartedMain] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-04-01 14:10:27.570 ERROR 13364 --- [restartedMain] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springApplicationAdminRegistrar' defined in class path resource [org/springframework/boot/autoconfigure/admin/SpringApplicationAdminJmxAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Admin,name=SpringApplication
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at kr.co.pjm.diving.mq.Application.main(Application.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Admin,name=SpringApplication
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Unknown Source)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(Unknown Source)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(Unknown Source)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(Unknown Source)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(Unknown Source)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(Unknown Source)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar.afterPropertiesSet(SpringApplicationAdminMXBeanRegistrar.java:92)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	... 21 common frames omitted
+
+2019-04-01 14:10:46.532  INFO 13364 --- [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-04-01 14:10:46.533  INFO 13364 --- [RMI TCP Connection(4)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1a585683: startup date [Mon Apr 01 14:10:21 KST 2019]; root of context hierarchy
+2019-04-01 14:10:46.535  INFO 13364 --- [RMI TCP Connection(4)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-04-01 14:10:47.261  INFO 13364 --- [RMI TCP Connection(4)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147482648
+2019-04-01 14:10:47.262  INFO 13364 --- [RMI TCP Connection(4)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-04-01 14:10:47.263  INFO 13364 --- [RMI TCP Connection(4)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-04-01 14:10:47.270  INFO 13364 --- [RMI TCP Connection(4)-127.0.0.1] o.a.activemq.broker.TransportConnector   : Connector vm://localhost stopped
+2019-04-01 14:10:47.270  INFO 13364 --- [RMI TCP Connection(4)-127.0.0.1] o.apache.activemq.broker.BrokerService   : Apache ActiveMQ 5.14.3 (localhost, ID:SKCC16D00593-52825-1554095426046-0:1) is shutting down
+2019-04-01 14:10:47.280  INFO 13364 --- [RMI TCP Connection(4)-127.0.0.1] o.apache.activemq.broker.BrokerService   : Apache ActiveMQ 5.14.3 (localhost, ID:SKCC16D00593-52825-1554095426046-0:1) uptime 21.256 seconds
+2019-04-01 14:10:47.280  INFO 13364 --- [RMI TCP Connection(4)-127.0.0.1] o.apache.activemq.broker.BrokerService   : Apache ActiveMQ 5.14.3 (localhost, ID:SKCC16D00593-52825-1554095426046-0:1) is shutdown
+2019-04-01 14:10:47.281  INFO 13364 --- [RMI TCP Connection(4)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-04-01 14:10:47.281  INFO 13364 --- [RMI TCP Connection(4)-127.0.0.1] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2019-04-01 14:10:47.285  INFO 13364 --- [RMI TCP Connection(4)-127.0.0.1] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2019-04-01 14:10:59.385  INFO 11512 --- [restartedMain] kr.co.pjm.diving.mq.Application          : Starting Application on SKCC16D00593 with PID 11512 (C:\cloud\git\enjoy-diving\enjoy-diving-mq\bin started by Administrator in C:\cloud\git\enjoy-diving\enjoy-diving-mq)
+2019-04-01 14:10:59.386 DEBUG 11512 --- [restartedMain] kr.co.pjm.diving.mq.Application          : Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2019-04-01 14:10:59.386  INFO 11512 --- [restartedMain] kr.co.pjm.diving.mq.Application          : The following profiles are active: dev
+2019-04-01 14:10:59.422  INFO 11512 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@24e3f498: startup date [Mon Apr 01 14:10:59 KST 2019]; root of context hierarchy
+2019-04-01 14:10:59.565 DEBUG 11512 --- [background-preinit] org.jboss.logging                        : Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2019-04-01 14:11:00.393  INFO 11512 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-04-01 14:11:00.427  INFO 11512 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-04-01 14:11:00.720  INFO 11512 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-01 14:11:00.846  INFO 11512 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$edf99c40] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-01 14:11:00.905  INFO 11512 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$278dde12] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-01 14:11:01.229  INFO 11512 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8083 (http)
+2019-04-01 14:11:01.239  INFO 11512 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2019-04-01 14:11:01.241  INFO 11512 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-04-01 14:11:01.355  INFO 11512 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-01 14:11:01.355  INFO 11512 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1933 ms
+2019-04-01 14:11:01.557  INFO 11512 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-01 14:11:01.557  INFO 11512 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-01 14:11:01.558  INFO 11512 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-04-01 14:11:01.558  INFO 11512 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-01 14:11:01.559  INFO 11512 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-04-01 14:11:01.559  INFO 11512 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-04-01 14:11:01.560  INFO 11512 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'webServlet' to [/h2-console/*]
+2019-04-01 14:11:01.891  INFO 11512 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-04-01 14:11:01.901  INFO 11512 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-01 14:11:01.962  INFO 11512 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-04-01 14:11:01.964  INFO 11512 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-04-01 14:11:01.965  INFO 11512 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-04-01 14:11:02.007  INFO 11512 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-04-01 14:11:02.098  INFO 11512 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-04-01 14:11:02.180  INFO 11512 --- [restartedMain] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2019-04-01 14:11:02.386  INFO 11512 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2019-04-01 14:11:02.388  INFO 11512 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2019-04-01 14:11:02.401  INFO 11512 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-04-01 14:11:02.784  INFO 11512 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@24e3f498: startup date [Mon Apr 01 14:10:59 KST 2019]; root of context hierarchy
+2019-04-01 14:11:02.848  INFO 11512 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-04-01 14:11:02.849  INFO 11512 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-04-01 14:11:02.882  INFO 11512 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-01 14:11:02.882  INFO 11512 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-01 14:11:02.926  INFO 11512 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-01 14:11:03.493  INFO 11512 --- [restartedMain] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: a056f8fe-e630-4084-85a9-132bad18d052
+
+2019-04-01 14:11:03.533  INFO 11512 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+2019-04-01 14:11:03.594  INFO 11512 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.boot.autoconfigure.security.SpringBootWebSecurityConfiguration$ApplicationNoWebSecurityConfigurerAdapter$1@3bbce5e, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5dd6693e, org.springframework.security.web.context.SecurityContextPersistenceFilter@6bbb92b3, org.springframework.security.web.header.HeaderWriterFilter@4aa0cea5, org.springframework.security.web.csrf.CsrfFilter@339d0f9, org.springframework.security.web.authentication.logout.LogoutFilter@f50322f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@708f59a9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@369c18c5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5319f9e1, org.springframework.security.web.session.SessionManagementFilter@134445c, org.springframework.security.web.access.ExceptionTranslationFilter@c8ec346]
+2019-04-01 14:11:03.772  INFO 11512 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-04-01 14:11:03.833  INFO 11512 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-04-01 14:11:03.840  INFO 11512 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2019-04-01 14:11:03.843  INFO 11512 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2019-04-01 14:11:03.859  INFO 11512 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2019-04-01 14:11:03.859  INFO 11512 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-04-01 14:11:03.909  INFO 11512 --- [restartedMain] o.apache.activemq.broker.BrokerService   : Using Persistence Adapter: MemoryPersistenceAdapter
+2019-04-01 14:11:03.927  INFO 11512 --- [JMX connector] o.a.a.broker.jmx.ManagementContext       : JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+2019-04-01 14:11:04.049  INFO 11512 --- [restartedMain] o.apache.activemq.broker.BrokerService   : Apache ActiveMQ 5.14.3 (localhost, ID:SKCC16D00593-52845-1554095463915-0:1) is starting
+2019-04-01 14:11:04.057  INFO 11512 --- [restartedMain] o.apache.activemq.broker.BrokerService   : Apache ActiveMQ 5.14.3 (localhost, ID:SKCC16D00593-52845-1554095463915-0:1) started
+2019-04-01 14:11:04.057  INFO 11512 --- [restartedMain] o.apache.activemq.broker.BrokerService   : For help or more information please see: http://activemq.apache.org
+2019-04-01 14:11:04.062  WARN 11512 --- [restartedMain] o.apache.activemq.broker.BrokerService   : Temporary Store limit is 51200 mb (current store usage is 0 mb). The data directory: C:\cloud\git\enjoy-diving\enjoy-diving-mq only has 34453 mb of usable space. - resetting to maximum available disk space: 34453 mb
+2019-04-01 14:11:04.091  INFO 11512 --- [restartedMain] o.a.activemq.broker.TransportConnector   : Connector vm://localhost started
+2019-04-01 14:11:04.171  INFO 11512 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8083 (http)
+2019-04-01 14:11:04.175  INFO 11512 --- [restartedMain] kr.co.pjm.diving.mq.Application          : Started Application in 5.185 seconds (JVM running for 5.97)
+2019-04-01 14:11:04.239  INFO 11512 --- [restartedMain] kr.co.pjm.diving.mq.Application          : Starting Application on SKCC16D00593 with PID 11512 (C:\cloud\git\enjoy-diving\enjoy-diving-mq\bin started by Administrator in C:\cloud\git\enjoy-diving\enjoy-diving-mq)
+2019-04-01 14:11:04.239 DEBUG 11512 --- [restartedMain] kr.co.pjm.diving.mq.Application          : Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2019-04-01 14:11:04.239  INFO 11512 --- [restartedMain] kr.co.pjm.diving.mq.Application          : The following profiles are active: dev
+2019-04-01 14:11:04.242  INFO 11512 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@47b7e408: startup date [Mon Apr 01 14:11:04 KST 2019]; root of context hierarchy
+2019-04-01 14:11:04.860  INFO 11512 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-04-01 14:11:04.873  INFO 11512 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-04-01 14:11:04.929  INFO 11512 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-01 14:11:04.934  INFO 11512 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$edf99c40] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-01 14:11:04.941  INFO 11512 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$278dde12] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-01 14:11:05.096  INFO 11512 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8083 (http)
+2019-04-01 14:11:05.097  INFO 11512 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2019-04-01 14:11:05.097  INFO 11512 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-04-01 14:11:05.108  INFO 11512 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2019-04-01 14:11:05.108  INFO 11512 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 866 ms
+2019-04-01 14:11:05.167  INFO 11512 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-01 14:11:05.167  INFO 11512 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-01 14:11:05.167  INFO 11512 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-04-01 14:11:05.168  INFO 11512 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-01 14:11:05.168  INFO 11512 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-04-01 14:11:05.168  INFO 11512 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-04-01 14:11:05.169  INFO 11512 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'webServlet' to [/h2-console/*]
+2019-04-01 14:11:05.270  INFO 11512 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-04-01 14:11:05.270  INFO 11512 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-01 14:11:05.280  INFO 11512 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-04-01 14:11:05.284  INFO 11512 --- [restartedMain] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2019-04-01 14:11:05.288  INFO 11512 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2019-04-01 14:11:05.289  INFO 11512 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2019-04-01 14:11:05.290  WARN 11512 --- [restartedMain] o.h.j.i.EntityManagerFactoryRegistry     : HHH000436: Entity manager factory name (default) is already registered.  If entity manager will be clustered or passivated, specify a unique value for property 'hibernate.ejb.entitymanager_factory_name'
+2019-04-01 14:11:05.290  INFO 11512 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-04-01 14:11:05.396  INFO 11512 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@47b7e408: startup date [Mon Apr 01 14:11:04 KST 2019]; root of context hierarchy
+2019-04-01 14:11:05.411  INFO 11512 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-04-01 14:11:05.411  INFO 11512 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-04-01 14:11:05.431  INFO 11512 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-01 14:11:05.431  INFO 11512 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-01 14:11:05.451  INFO 11512 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-01 14:11:05.474  WARN 11512 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springApplicationAdminRegistrar' defined in class path resource [org/springframework/boot/autoconfigure/admin/SpringApplicationAdminJmxAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Admin,name=SpringApplication
+2019-04-01 14:11:05.474  INFO 11512 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-04-01 14:11:05.475  INFO 11512 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-04-01 14:11:05.475  INFO 11512 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2019-04-01 14:11:05.476  INFO 11512 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2019-04-01 14:11:05.478  INFO 11512 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service Tomcat
+2019-04-01 14:11:05.487  INFO 11512 --- [restartedMain] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-04-01 14:11:05.495 ERROR 11512 --- [restartedMain] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springApplicationAdminRegistrar' defined in class path resource [org/springframework/boot/autoconfigure/admin/SpringApplicationAdminJmxAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Admin,name=SpringApplication
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at kr.co.pjm.diving.mq.Application.main(Application.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Admin,name=SpringApplication
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Unknown Source)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(Unknown Source)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(Unknown Source)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(Unknown Source)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(Unknown Source)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(Unknown Source)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar.afterPropertiesSet(SpringApplicationAdminMXBeanRegistrar.java:92)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	... 21 common frames omitted
+
+2019-04-01 14:11:47.570  INFO 11512 --- [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-04-01 14:11:47.571  INFO 11512 --- [RMI TCP Connection(4)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@24e3f498: startup date [Mon Apr 01 14:10:59 KST 2019]; root of context hierarchy
+2019-04-01 14:11:47.574  INFO 11512 --- [RMI TCP Connection(4)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-04-01 14:11:48.163  INFO 11512 --- [RMI TCP Connection(4)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147482648
+2019-04-01 14:11:48.165  INFO 11512 --- [RMI TCP Connection(4)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-04-01 14:11:48.166  INFO 11512 --- [RMI TCP Connection(4)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-04-01 14:11:48.179  INFO 11512 --- [RMI TCP Connection(4)-127.0.0.1] o.a.activemq.broker.TransportConnector   : Connector vm://localhost stopped
+2019-04-01 14:11:48.180  INFO 11512 --- [RMI TCP Connection(4)-127.0.0.1] o.apache.activemq.broker.BrokerService   : Apache ActiveMQ 5.14.3 (localhost, ID:SKCC16D00593-52845-1554095463915-0:1) is shutting down
+2019-04-01 14:11:48.192  INFO 11512 --- [RMI TCP Connection(4)-127.0.0.1] o.apache.activemq.broker.BrokerService   : Apache ActiveMQ 5.14.3 (localhost, ID:SKCC16D00593-52845-1554095463915-0:1) uptime 44.301 seconds
+2019-04-01 14:11:48.192  INFO 11512 --- [RMI TCP Connection(4)-127.0.0.1] o.apache.activemq.broker.BrokerService   : Apache ActiveMQ 5.14.3 (localhost, ID:SKCC16D00593-52845-1554095463915-0:1) is shutdown
+2019-04-01 14:11:48.192  INFO 11512 --- [RMI TCP Connection(4)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-04-01 14:11:48.193  INFO 11512 --- [RMI TCP Connection(4)-127.0.0.1] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2019-04-01 14:11:48.196  INFO 11512 --- [RMI TCP Connection(4)-127.0.0.1] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2019-04-01 14:11:56.792  INFO 16204 --- [restartedMain] kr.co.pjm.diving.mq.Application          : Starting Application on SKCC16D00593 with PID 16204 (C:\cloud\git\enjoy-diving\enjoy-diving-mq\bin started by Administrator in C:\cloud\git\enjoy-diving\enjoy-diving-mq)
+2019-04-01 14:11:56.793 DEBUG 16204 --- [restartedMain] kr.co.pjm.diving.mq.Application          : Running with Spring Boot v1.5.2.RELEASE, Spring v4.3.7.RELEASE
+2019-04-01 14:11:56.794  INFO 16204 --- [restartedMain] kr.co.pjm.diving.mq.Application          : The following profiles are active: dev
+2019-04-01 14:11:56.830  INFO 16204 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2c49eef4: startup date [Mon Apr 01 14:11:56 KST 2019]; root of context hierarchy
+2019-04-01 14:11:56.993 DEBUG 16204 --- [background-preinit] org.jboss.logging                        : Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2019-04-01 14:11:57.859  INFO 16204 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-04-01 14:11:57.894  INFO 16204 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-04-01 14:11:58.192  INFO 16204 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-01 14:11:58.320  INFO 16204 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$7fc758ba] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-01 14:11:58.379  INFO 16204 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b95b9a8c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-01 14:11:58.692  INFO 16204 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8083 (http)
+2019-04-01 14:11:58.702  INFO 16204 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2019-04-01 14:11:58.703  INFO 16204 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-04-01 14:11:58.804  INFO 16204 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-01 14:11:58.805  INFO 16204 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1975 ms
+2019-04-01 14:11:59.006  INFO 16204 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-01 14:11:59.007  INFO 16204 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-01 14:11:59.007  INFO 16204 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-04-01 14:11:59.007  INFO 16204 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-01 14:11:59.008  INFO 16204 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-04-01 14:11:59.009  INFO 16204 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-04-01 14:11:59.010  INFO 16204 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'webServlet' to [/h2-console/*]
+2019-04-01 14:11:59.367  INFO 16204 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-04-01 14:11:59.378  INFO 16204 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-01 14:11:59.438  INFO 16204 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-04-01 14:11:59.440  INFO 16204 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-04-01 14:11:59.441  INFO 16204 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-04-01 14:11:59.482  INFO 16204 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-04-01 14:11:59.573  INFO 16204 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-04-01 14:11:59.633  INFO 16204 --- [restartedMain] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2019-04-01 14:11:59.850  INFO 16204 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2019-04-01 14:11:59.853  INFO 16204 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2019-04-01 14:11:59.866  INFO 16204 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-04-01 14:12:00.251  INFO 16204 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2c49eef4: startup date [Mon Apr 01 14:11:56 KST 2019]; root of context hierarchy
+2019-04-01 14:12:00.318  INFO 16204 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-04-01 14:12:00.319  INFO 16204 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-04-01 14:12:00.352  INFO 16204 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-01 14:12:00.352  INFO 16204 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-01 14:12:00.395  INFO 16204 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-01 14:12:00.967  INFO 16204 --- [restartedMain] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: 4bb370df-20e4-4cb7-ac95-731daab6c0d8
+
+2019-04-01 14:12:01.004  INFO 16204 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+2019-04-01 14:12:01.063  INFO 16204 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.boot.autoconfigure.security.SpringBootWebSecurityConfiguration$ApplicationNoWebSecurityConfigurerAdapter$1@17c56bde, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4736dade, org.springframework.security.web.context.SecurityContextPersistenceFilter@79830c28, org.springframework.security.web.header.HeaderWriterFilter@63869f51, org.springframework.security.web.csrf.CsrfFilter@2fbb2eaa, org.springframework.security.web.authentication.logout.LogoutFilter@68fdb742, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4f5f1596, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2f90e680, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@42f432dd, org.springframework.security.web.session.SessionManagementFilter@5cd1effd, org.springframework.security.web.access.ExceptionTranslationFilter@6f590a02]
+2019-04-01 14:12:01.250  INFO 16204 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-04-01 14:12:01.311  INFO 16204 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-04-01 14:12:01.318  INFO 16204 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2019-04-01 14:12:01.321  INFO 16204 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2019-04-01 14:12:01.337  INFO 16204 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2019-04-01 14:12:01.337  INFO 16204 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-04-01 14:12:01.387  INFO 16204 --- [restartedMain] o.apache.activemq.broker.BrokerService   : Using Persistence Adapter: MemoryPersistenceAdapter
+2019-04-01 14:12:01.404  INFO 16204 --- [JMX connector] o.a.a.broker.jmx.ManagementContext       : JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+2019-04-01 14:12:01.530  INFO 16204 --- [restartedMain] o.apache.activemq.broker.BrokerService   : Apache ActiveMQ 5.14.3 (localhost, ID:SKCC16D00593-52870-1554095521392-0:1) is starting
+2019-04-01 14:12:01.538  INFO 16204 --- [restartedMain] o.apache.activemq.broker.BrokerService   : Apache ActiveMQ 5.14.3 (localhost, ID:SKCC16D00593-52870-1554095521392-0:1) started
+2019-04-01 14:12:01.539  INFO 16204 --- [restartedMain] o.apache.activemq.broker.BrokerService   : For help or more information please see: http://activemq.apache.org
+2019-04-01 14:12:01.544  WARN 16204 --- [restartedMain] o.apache.activemq.broker.BrokerService   : Temporary Store limit is 51200 mb (current store usage is 0 mb). The data directory: C:\cloud\git\enjoy-diving\enjoy-diving-mq only has 34453 mb of usable space. - resetting to maximum available disk space: 34453 mb
+2019-04-01 14:12:01.569  INFO 16204 --- [restartedMain] o.a.activemq.broker.TransportConnector   : Connector vm://localhost started
+2019-04-01 14:12:01.648  INFO 16204 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8083 (http)
+2019-04-01 14:12:01.653  INFO 16204 --- [restartedMain] kr.co.pjm.diving.mq.Application          : Started Application in 5.249 seconds (JVM running for 6.046)
+2019-04-01 14:20:28.775  INFO 16204 --- [RMI TCP Connection(5)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-04-01 14:20:28.776  INFO 16204 --- [RMI TCP Connection(5)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2c49eef4: startup date [Mon Apr 01 14:11:56 KST 2019]; root of context hierarchy
+2019-04-01 14:20:28.780  INFO 16204 --- [RMI TCP Connection(5)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-04-01 14:20:29.771  INFO 16204 --- [RMI TCP Connection(5)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147482648
+2019-04-01 14:20:29.774  INFO 16204 --- [RMI TCP Connection(5)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-04-01 14:20:29.775  INFO 16204 --- [RMI TCP Connection(5)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-04-01 14:20:29.782  INFO 16204 --- [RMI TCP Connection(5)-127.0.0.1] o.a.activemq.broker.TransportConnector   : Connector vm://localhost stopped
+2019-04-01 14:20:29.783  INFO 16204 --- [RMI TCP Connection(5)-127.0.0.1] o.apache.activemq.broker.BrokerService   : Apache ActiveMQ 5.14.3 (localhost, ID:SKCC16D00593-52870-1554095521392-0:1) is shutting down
+2019-04-01 14:20:29.790  INFO 16204 --- [RMI TCP Connection(5)-127.0.0.1] o.apache.activemq.broker.BrokerService   : Apache ActiveMQ 5.14.3 (localhost, ID:SKCC16D00593-52870-1554095521392-0:1) uptime 8 minutes
+2019-04-01 14:20:29.791  INFO 16204 --- [RMI TCP Connection(5)-127.0.0.1] o.apache.activemq.broker.BrokerService   : Apache ActiveMQ 5.14.3 (localhost, ID:SKCC16D00593-52870-1554095521392-0:1) is shutdown
+2019-04-01 14:20:29.791  INFO 16204 --- [RMI TCP Connection(5)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-04-01 14:20:29.791  INFO 16204 --- [RMI TCP Connection(5)-127.0.0.1] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2019-04-01 14:20:29.793  INFO 16204 --- [RMI TCP Connection(5)-127.0.0.1] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete

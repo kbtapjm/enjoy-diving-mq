@@ -1,0 +1,66 @@
+server:
+  port: 8083
+  tomcat:
+    uri-encoding: UTF-8
+  error:
+    whitelabel:
+      enabled: false 
+spring:
+  application:
+    name: enjoy-diving-mq
+  output:
+    ansi:
+      enabled: always
+  profiles:
+    active: dev
+  http:
+    encoding:
+      charset: UTF-8
+  batch:    job:      enabled: false
+security:
+  basic:
+    enabled: false
+
+
+---
+# local
+spring:
+  profiles: local
+
+logging:
+  level:
+    root: DEBUG 
+    org.apache: INFO
+    org.springframework.batch: DEBUG
+  config: classpath:config/logback-spring.xml
+  file : local
+  path : data/logs
+  
+---  
+
+# dev
+spring:
+  profiles: dev
+         
+logging:
+  level:
+    root: DEBUG 
+    org.apache: INFO
+  config: classpath:config/logback-spring.xml
+  file : dev
+  path : data/logs
+
+
+---  
+
+# stg
+spring:
+  profiles: stg
+      
+logging:
+  level:
+    root: DEBUG 
+    org.apache: INFO
+  config: classpath:config/logback-spring.xml
+  file : stg
+  path : data/logs

@@ -12,3 +12,7 @@ dependencies {
 	compile group: 'org.springframework.boot', name: 'spring-boot-starter-amqp', version: "${springBootVersion}"
 	compile group: 'org.springframework.boot', name: 'spring-boot-devtools', version: "${springBootVersion}"
 }
+
+bootRepackage {
+    mainClass = 'kr.co.pjm.diving.mq.Application'
+}
