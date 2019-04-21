@@ -19,7 +19,7 @@ import kr.co.pjm.diving.mq.model.Message;
 @Configuration
 public class RabbitMQConfiguration {
 
-  public static final String QUEUE_NAME = "queue";
+  public static final String QUEUE_NAME = "diving";
 
   private static final String EXCHANGE = QUEUE_NAME + "-exchange";
 

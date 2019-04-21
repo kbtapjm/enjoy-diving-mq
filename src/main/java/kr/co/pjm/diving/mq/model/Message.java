@@ -15,5 +15,5 @@ public class Message implements Serializable {
   private static final long serialVersionUID = 7422724864563311601L;
   
   private int val;
-  private String m;
+  private String msg;
 }
