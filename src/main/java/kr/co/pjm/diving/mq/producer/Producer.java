@@ -19,15 +19,18 @@ public class Producer {
   @Autowired
   private RabbitTemplate rabbitTemplate;
 
-  @Scheduled(cron = "0/5 * * * * *")
+  @Scheduled(cron = "0/30 * * * * *")
   public void onSend() {
     log.info("Sending message... Start");
 
     StopWatch stopWatch = new StopWatch();
     stopWatch.start();
-    IntStream.range(1, 15000).parallel().forEach(val -> {
-      rabbitTemplate.convertAndSend(RabbitMQConfiguration.QUEUE_NAME, new Message(val, "Hello, RabbitMQ! 1"));
-    });
+//    IntStream.range(1, 15000).parallel().forEach(val -> {
+//      rabbitTemplate.convertAndSend(RabbitMQConfiguration.QUEUE_NAME, new Message(val, "Hello, RabbitMQ! 1"));
+//    });
+    
+    rabbitTemplate.convertAndSend(RabbitMQConfiguration.QUEUE_NAME, new Message(1, "Hello, RabbitMQ!1"));
+    
     stopWatch.stop();
     log.info(stopWatch.toString());
     log.info("Sending message... End");

@@ -16,11 +16,6 @@ spring:
   http:
     encoding:
       charset: UTF-8
-  rabbitmq:
-    host: localhost
-    username: diver
-    password: 1234
-    port: 5672
 security:
   basic:
     enabled: false
@@ -29,6 +24,11 @@ security:
 # local
 spring:
   profiles: local
+  rabbitmq:
+    host: localhost
+    username: diver
+    password: 1234
+    port: 5672
 
 logging:
   level:
@@ -44,6 +44,11 @@ logging:
 # dev
 spring:
   profiles: dev
+  rabbitmq:
+    host: localhost
+    username: diver
+    password: 1234
+    port: 5672
          
 logging:
   level:
@@ -59,6 +64,11 @@ logging:
 # stg
 spring:
   profiles: stg
+  rabbitmq:
+    host: localhost
+    username: diver
+    password: 1234
+    port: 5672
       
 logging:
   level:
