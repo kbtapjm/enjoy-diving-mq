@@ -11,7 +11,7 @@ import lombok.extern.slf4j.Slf4j;
 @Component
 public class Consumer {
 
-  @RabbitListener(queues = RabbitMQConfiguration.QUEUE_NAME)
+  @RabbitListener(containerFactory = "SampleContainerFactory", queues = RabbitMQConfiguration.QUEUE_NAME)
   public void onMessage(Message message) {
     log.info("Received < " + message.toString() + " >");
   }
